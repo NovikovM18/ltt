@@ -41,14 +41,13 @@ export default {
   methods: {
     showParent(item) {
       if (this.parentItem) {
-        console.log('parent element: ' + this.parentItem.id + '+' + this.parentItem.name);
+        console.log(this.parentItem);
         }
       else {
         console.log('this element doesn`t have parent element');
       }
       setTimeout((() => item.selected = true), 0)
-    },
-
+    }
   }
 }
 </script>
